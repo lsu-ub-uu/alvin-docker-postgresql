@@ -17,10 +17,10 @@
 		<version>2.3.0</version>
 	</parent>
 
-	<artifactId>systemone-docker-postgresql</artifactId>
+	<artifactId>alvin-docker-postgresql</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>SystemOne PostgreSQL Docker</name>
+	<name>Alvin PostgreSQL Docker</name>
 
 	<properties>
 		<cora-docker-postgresql.version>11.0-SNAPSHOT</cora-docker-postgresql.version>
@@ -33,9 +33,9 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git:https://github.com/lsu-ub-uu/systemone-docker-postgresql.git</connection>
-		<developerConnection>scm:git:https://github.com/lsu-ub-uu/systemone-docker-postgresql.git</developerConnection>
-		<url>https://github.com/lsu-ub-uu/systemone-docker-postgresql</url>
+		<connection>scm:git:https://github.com/lsu-ub-uu/alvin-docker-postgresql.git</connection>
+		<developerConnection>scm:git:https://github.com/lsu-ub-uu/alvin-docker-postgresql.git</developerConnection>
+		<url>https://github.com/lsu-ub-uu/alvin-docker-postgresql</url>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -81,7 +81,7 @@
 								<argument>-t</argument>
 								<argument>${project.artifactId}:${project.version}</argument>
 								<argument>--build-arg</argument>
-								<argument>POSTGRESQL_DOCKER_VERSION=${cora-docker-postgresql.version}</argument>
+								<argument>POSTGRESQL_DOCKER_VERSION=${alvin-docker-postgresql.version}</argument>
 								<argument>.</argument>
 							</arguments>
 						</configuration>
