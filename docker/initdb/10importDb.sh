@@ -1,6 +1,6 @@
 #!/bin/bash
 dbFilesFolder="dbfiles"
-dataDividers="cora jsClient alvin"
+dataDividers="cora jsClient alvin alvinPreview alvinTestSystem alvinProduction alvinData"
 
 importForDataDivider () {
 	for SQL in "$1"/* ;	do
