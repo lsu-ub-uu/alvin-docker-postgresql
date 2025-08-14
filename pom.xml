@@ -14,7 +14,7 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent-docker</artifactId>
-		<version>1.1.0</version>
+		<version>1.2.0</version>
 	</parent>
 
 	<artifactId>alvin-docker-postgresql</artifactId>
@@ -26,7 +26,7 @@
 		<cora-docker-postgresql.version>11.1.0</cora-docker-postgresql.version>
 		
 		<cora-metadata.version>1.12.0</cora-metadata.version>
-		<alvin-metadata.version>1.5.0</alvin-metadata.version>
+		<alvin-metadata.version>1.6.0</alvin-metadata.version>
 
 		<!-- Override property so docker-build profile activates in this module -->
 		<docker.build.activate>true</docker.build.activate>
