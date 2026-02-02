@@ -23,7 +23,7 @@
 	<name>Alvin PostgreSQL Docker</name>
 
 	<properties>
-		<cora-docker-postgresql.version>11.3.0</cora-docker-postgresql.version>
+		<cora-docker-postgresql.version>11.4.0</cora-docker-postgresql.version>
 		
 		<cora-metadata.version>1.63.0</cora-metadata.version>
 		<alvin-metadata.version>1.29.0</alvin-metadata.version>
