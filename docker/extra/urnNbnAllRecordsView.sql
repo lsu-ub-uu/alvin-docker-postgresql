@@ -1,6 +1,6 @@
-DROP VIEW IF EXISTS urnnbn_records;
+DROP VIEW IF EXISTS urnnbn_all_records;
 
-CREATE VIEW urnnbn_records as
+CREATE VIEW urnnbn_all_records as
 	SELECT
 		substring(record_urnnbn->>'value' from 'urn:nbn:se:([^:-]+)') as serie,
 		record_urnnbn->>'value' AS urnnbn,
@@ -14,7 +14,7 @@ CREATE VIEW urnnbn_records as
 		LATERAL jsonb_array_elements(record_recordInfo->'children') AS record_visibility,
 		LATERAL jsonb_array_elements(record_recordInfo->'children') AS record_tsVisibility
 	WHERE
-		type = 'diva-output'
+		type = 'alvin-record'
 		AND record_recordInfo->>'name' = 'recordInfo'
 		AND record_id->>'name' = 'id'
 		AND record_urnnbn->>'name' = 'urn'
